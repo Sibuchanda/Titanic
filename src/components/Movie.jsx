@@ -11,7 +11,8 @@ const Movie = () => {
 
   return (
    <>
-   <ul className='w-auto h-auto bg-amber-100 flex flex-wrap mt-4 gap-10'>
+   <div className="container w-screen h-auto flex items-center justify-center bg-blue-100">
+   <ul className='w-auto h-auto bg-blue-100 grid grid-cols-4 mt-6 gap-14'>
 
     {
       movieData && movieData.Search.map((currMovie)=>{
@@ -22,7 +23,7 @@ const Movie = () => {
     }
 
    </ul>
-   
+   </div>
    </>
   )
 }

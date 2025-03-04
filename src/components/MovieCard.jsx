@@ -12,10 +12,10 @@ const MovieCard = ({ currMovie }) => {
                 <div className="imgContainer w-auto h-auto">
                     <img src={Poster} alt={imdbID} className='w-50 h-60' />
                 </div>
-                <div className="buttonContainer">
-                    {/* <NavLink to={`/movie/${imdbID}`}>
-                    <button className='w-auto h-auto border p-2'> Watch Now </button>
-                    </NavLink> */}
+                <div className="buttonContainer mt-1">
+                    <NavLink to={`/movie/${imdbID}`}>
+                    <button className='w-50 h-auto p-2 bg-blue-500 hover:bg-blue-800  text-white cursor-pointer'> Watch Now </button>
+                    </NavLink>
                 </div>
             </li>
 

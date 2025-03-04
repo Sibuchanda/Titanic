@@ -4,6 +4,7 @@ import Movie from './components/Movie';
 import About from './components/About';
 import getMovieData from './components/api/FetchMovieData';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MovieDetails from './components/MovieDetails';
 
 
 function App() {
@@ -18,6 +19,12 @@ function App() {
           path: '/movie',
           element: <Movie/>,
           loader: getMovieData,
+          
+        },
+        {
+          path: '/movie/:movieID',
+          element: <MovieDetails/>,
+          // loader: getMovieData,
           
         },
         {
